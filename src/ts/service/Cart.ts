@@ -28,7 +28,7 @@ export default class Cart {
       }
     
       deleteItem(id: number): void {
-        let index = this._items.findIndex(a => a.id === id);
+        const index = this._items.findIndex(a => a.id === id);
         if (index !== -1) {
           this._items.splice(index, 1);
         }
