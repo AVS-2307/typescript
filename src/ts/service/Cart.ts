@@ -13,7 +13,7 @@ export default class Cart {
 
     totalPrice() {
         if (this._items.length > 0) {
-          let sum: number = 0;
+          let sum = 0;
           this._items.forEach(a => sum += a.price);
           return sum;
         }
